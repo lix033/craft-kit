@@ -1,9 +1,25 @@
 {
   "name": "craftkit-cli",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "description": "Study → build → check → refine any software, from the terminal, with your coding agent.",
-  "keywords": ["cli", "coding-agent", "claude-code", "codex", "gemini", "rebuild", "skill"],
+  "keywords": [
+    "cli",
+    "coding-agent",
+    "claude-code",
+    "codex",
+    "gemini",
+    "rebuild",
+    "skill"
+  ],
   "license": "(MIT OR Apache-2.0)",
+  "homepage": "https://github.com/lix033/craft-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lix033/craft-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lix033/craft-kit/issues"
+  },
   "bin": {
     "craft": "bin/craft.js",
     "craftkit": "bin/craft.js",
@@ -16,11 +32,16 @@
     "craft_kit/*.py",
     "craft_kit/SKILL.md",
     "README.md",
+    "README.fr.md",
     "LICENSE-MIT",
     "LICENSE-APACHE"
   ],
   "engines": {
     "node": ">=16"
   },
-  "os": ["darwin", "linux", "win32"]
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
 }

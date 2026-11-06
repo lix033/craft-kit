@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "craftkit"
-version = "0.3.1"
+version = "0.3.3"
 description = "Study → build → check → refine any software, from the terminal, with your coding agent."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -20,6 +20,12 @@ classifiers = [
   "Topic :: Software Development :: Code Generators",
 ]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/lix033/craft-kit"
+Repository = "https://github.com/lix033/craft-kit"
+Issues = "https://github.com/lix033/craft-kit/issues"
+Documentation = "https://github.com/lix033/craft-kit#readme"
 
 [project.optional-dependencies]
 browser = ["playwright>=1.40"]

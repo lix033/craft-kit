@@ -21,6 +21,7 @@ import os
 import re
 import tempfile
 import time
+import unicodedata
 from pathlib import Path
 from typing import Optional
 
@@ -87,7 +88,8 @@ def parse_target(raw: str) -> dict:
 
 
 def slug(text: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    plain = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")  # é → e
+    s = re.sub(r"[^a-z0-9]+", "-", plain.lower()).strip("-")
     return (s[:40].rstrip("-") or "project")
 
 
